@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+}
+
+.left-side{
+    width: 30%;
+    background-color: #89CFF0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+
+}
+
+.right-side{
+    width: 70%;
+    height: 140vh;
+    background-color: rgb(234, 231, 231);
+    padding: 40px;
+    
+}
+
+.pic{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-top: 20px;
+    animation: imgUp 0.7s linear infinite alternate;
+    transition: 0.5s ease-in-out;
+}
+.pic:hover{
+    filter: drop-shadow(0 0 2rem rgb(90, 90, 240))
+}
+
+
+.line{
+    margin-bottom: 5px;
+    width: 150px;
+    margin-top: 5px;
+    height: 5px;
+    background-color: rgba(148, 75, 85, 0.979);
+    border-radius: 10px;
+}
+
+.info{
+    text-align: center;
+}
+
+.summary{
+    width: 70%;
+    text-align: center;
+}
+
+.para{
+    color: rgb(19, 18, 18);
+//     word-spacing: 5px;
+//     letter-spacing: 3px;
+}
+
+.work{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 0px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.outer{
+    margin-top: 10px;
+    width: 150px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: rgb(218, 194, 218);
+    position: relative;
+}
+
+.inner{
+    position: absolute;
+    width: 130px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: rgba(148, 75, 85, 0.979);
+
+}
+
+.css-bar{
+    width: 110px;
+}
+
+.js-bar{
+    width: 80px;
+}
+
+.php-bar{
+    width: 80px;
+}
+
+.react-bar{
+ width: 40px;
+}
+
+@keyframes imgUp{
+    to{
+        transform: translateY(-10px);
+    }
+}
